@@ -23,6 +23,6 @@ class HlsTrackMetadataEntry {
   int get hashCode => Object.hash(
     groupId,
     name,
-    const ListEquality<VariantInfo>().hash(variantInfos),
+    variantInfos,
   );
 }
